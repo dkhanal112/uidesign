@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(MyApp());
@@ -47,13 +48,14 @@ class _MyHomePageState extends State<MyHomePage> {
               children: [
                 Container(
                   width: MediaQuery.of(context).size.width * 0.65,
-                  child: Text(
-                    "Urban sketching | lorem ipsum lorem ipsum",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
-                  ),
+                  child: Text("Urban sketching | lorem ipsum lorem ipsum",
+                      style: GoogleFonts.openSans(
+                          fontWeight: FontWeight.bold, fontSize: 17)),
                 ),
                 Container(
-                  child: Text("\$25"),
+                  child: Text("\$25",
+                      style: GoogleFonts.openSans(
+                          fontSize: 17, fontWeight: FontWeight.w400)),
                 )
               ],
             ),
@@ -63,20 +65,23 @@ class _MyHomePageState extends State<MyHomePage> {
               backgroundImage: NetworkImage(
                   "https://img.icons8.com/bubbles/452/man-in-blue-jacket.png"),
             ),
-            title: Text("Hosted by"),
+            title: Text("Hosted by",
+                style: GoogleFonts.openSans(fontWeight: FontWeight.w400)),
             subtitle: Text(
               "Jhon doe",
-              style: TextStyle(fontWeight: FontWeight.bold),
+              style: GoogleFonts.openSans(
+                  fontSize: 17, fontWeight: FontWeight.w400),
             ),
           ),
           ListTile(
             leading: Icon(Icons.calendar_today),
             title: Text(
               "2nd December",
-              style: TextStyle(fontWeight: FontWeight.bold),
+              style: GoogleFonts.openSans(fontWeight: FontWeight.bold),
             ),
             subtitle: Text(
               "10:30-11:30 am",
+              style: GoogleFonts.openSans(fontWeight: FontWeight.w400),
             ),
           ),
           ListTile(
@@ -86,33 +91,27 @@ class _MyHomePageState extends State<MyHomePage> {
                 Icons.lock,
                 color: Colors.black54,
               ),
-              title: Text(
-                "Event Link",
-                style:
-                    TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
-              ),
-              subtitle: Text("Link visible for attendes"),
+              title: Text("Event Link",
+                  style: GoogleFonts.openSans(fontWeight: FontWeight.bold)),
+              subtitle: Text("Link visible for attendes",
+                  style: GoogleFonts.openSans(fontWeight: FontWeight.w400)),
             ),
           ),
           ListTile(
             leading: Icon(Icons.language),
-            title: Text(
-              "Languages",
-              style: TextStyle(fontWeight: FontWeight.bold),
-            ),
+            title: Text("Languages",
+                style: GoogleFonts.openSans(fontWeight: FontWeight.bold)),
             subtitle: Text(
               "English",
+              style: GoogleFonts.openSans(fontWeight: FontWeight.w400),
             ),
           ),
           ListTile(
             leading: Icon(Icons.text_fields),
-            title: Text(
-              "Ages",
-              style: TextStyle(fontWeight: FontWeight.bold),
-            ),
-            subtitle: Text(
-              "Seniors",
-            ),
+            title: Text("Ages",
+                style: GoogleFonts.openSans(fontWeight: FontWeight.bold)),
+            subtitle: Text("Seniors",
+                style: GoogleFonts.openSans(fontWeight: FontWeight.w400)),
           ),
           Divider(
             height: 4,
@@ -124,15 +123,15 @@ class _MyHomePageState extends State<MyHomePage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text("Description",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20,
-                    )),
+                    style: GoogleFonts.openSans(
+                        fontSize: 20, fontWeight: FontWeight.bold)),
                 SizedBox(
                   height: 10,
                 ),
                 Text(
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.")
+                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                  style: GoogleFonts.openSans(fontWeight: FontWeight.w400),
+                )
               ],
             ),
           ),
@@ -142,15 +141,14 @@ class _MyHomePageState extends State<MyHomePage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text("Requirements",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20,
-                    )),
+                    style: GoogleFonts.openSans(
+                        fontSize: 20, fontWeight: FontWeight.bold)),
                 SizedBox(
                   height: 10,
                 ),
                 Text(
-                    "Lorem Ipsum is simply dummy and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.")
+                    "Lorem Ipsum is simply dummy and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                    style: GoogleFonts.openSans(fontWeight: FontWeight.w400))
               ],
             ),
           ),
@@ -160,15 +158,14 @@ class _MyHomePageState extends State<MyHomePage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text("What you will learn",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20,
-                    )),
+                    style: GoogleFonts.openSans(
+                        fontSize: 20, fontWeight: FontWeight.bold)),
                 SizedBox(
                   height: 10,
                 ),
                 Text(
-                    "Lorem Ipsum is simply specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."),
+                    "Lorem Ipsum is simply specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                    style: GoogleFonts.openSans(fontWeight: FontWeight.w400)),
                 Container(
                   margin: EdgeInsets.all(12),
                   width: 400,
@@ -177,7 +174,10 @@ class _MyHomePageState extends State<MyHomePage> {
                     onPressed: () {},
                     child: Text(
                       "Buy Now",
-                      style: TextStyle(color: Colors.white),
+                      style: GoogleFonts.openSans(
+                          color: Colors.white,
+                          fontSize: 17,
+                          fontWeight: FontWeight.w400),
                     ),
                   ),
                 )
