@@ -167,9 +167,9 @@ class _MyHomePageState extends State<MyHomePage> {
                     "Lorem Ipsum is simply specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                     style: GoogleFonts.openSans(fontWeight: FontWeight.w400)),
                 Container(
-                  margin: EdgeInsets.all(12),
+                  margin: EdgeInsets.fromLTRB(18, 25, 18, 12),
                   width: 400,
-                  color: Colors.pink,
+                  color: Colors.pink[600],
                   child: MaterialButton(
                     onPressed: () {},
                     child: Text(
